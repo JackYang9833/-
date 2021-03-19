@@ -5,12 +5,12 @@ body,
 html{
     width: 100%;
 }
-
 .navbar{
     height: 50px;
     background: #000;
     position: fixed;
     width: 100%;
+	z-index: 999;
 }
 .navbar ul{
     display: flex;
