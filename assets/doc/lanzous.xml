@@ -1,1 +1,18 @@
-<?xmlns:>
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <node name="node1" id="0">
+        <text title="test"  content="详情" />
+        <img name="image" />
+        <pic name="test.jpg" />
+        <pic name="test1.jpg" />
+        <pic name="test2.jpg" />
+    </node>
+    <node name="node2" id="1">
+        <text title="test"  content="详情" />
+        <img name="image" />
+        <pic name="test.jpg" />
+        <pic name="test1.jpg" />
+        <pic name="test2.jpg" />
+    </node>
+
+</table>
