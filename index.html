@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="assets/css/index.css">
 	 <link rel="stylesheet" href="assets/css/styles.css">
     <script type="text/javascript" src="assets/js/script.js"></script>
+    
+  <script src="https://cdn.bootcss.com/typed.js/2.0.5/typed.js"></script>
 </head>
 <body>
 <div class="wrapper">
+		<canvas id="sakura"></canvas>
+		
+
+
+
+
+
     <div class="navbar">
         <ul>
             <li><a href="/">Home</a> </li>
@@ -21,9 +30,30 @@
             <li><a href="about.html">About</a> </li>
         </ul>
     </div>
+    <div class="typecontainer">
+<span class="element"></span>
+</div>
+<script>
+    var typed = new Typed('.element', {
+      strings: ["纠正一个错误的方法有很多", "而解决一个错误的终极方法，就是不给它发生的机会。"], //输入内容, 支持html标签
+      typeSpeed: 200,
+      backSpeed: 50 
+    });
+</script>
+
     <div id="main">
-		<canvas id="sakura"></canvas>
+
 <!-- sakura shader -->
+
+<!-- partial -->
+  <script  src="assets/js/script.js"></script>
+    </div>
+</div>
+<footer>
+<video id="vd1">
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">內場獨家！鳳凰記者身處中美交鋒現場！中方代表團為中國記者據理力爭！ <a href="https://t.co/0Bmhe05Pbg">pic.twitter.com/0Bmhe05Pbg</a></p>&mdash; PhoenixTV 鳳凰衛視 (@PhoenixTVHK) <a href="https://twitter.com/PhoenixTVHK/status/1372782860289994754?ref_src=twsrc%5Etfw">March 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</video>
+</footer>
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
 uniform mat4 uProjection;
 uniform mat4 uModelview;
@@ -309,14 +339,5 @@ void main(void) {
     gl_FragColor.a = 1.0;
 }
 </script>
-<!-- partial -->
-  <script  src="assets/js/script.js"></script>
-    </div>
-</div>
-<footer>
-<video id="vd1">
-<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">內場獨家！鳳凰記者身處中美交鋒現場！中方代表團為中國記者據理力爭！ <a href="https://t.co/0Bmhe05Pbg">pic.twitter.com/0Bmhe05Pbg</a></p>&mdash; PhoenixTV 鳳凰衛視 (@PhoenixTVHK) <a href="https://twitter.com/PhoenixTVHK/status/1372782860289994754?ref_src=twsrc%5Etfw">March 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</video>
-</footer>
 </body>
 </html>
