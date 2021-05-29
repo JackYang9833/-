@@ -28,22 +28,22 @@ a:active {text-decoration: none;color: #FFFF00;}
 </style>
 </head>
 <body>
-<div class="top">
-<div class="d1">
-<div class="d11 bgimg">
-<a href="/" class="d7">&nbsp;</a></div>
-</div>
-</div>
-  <h1>Page Not Found,please check your connection or contact me...</h1>
-  <h1></h1>
-<div style="color: #8a6d3b;background-color: #fcf8e3;padding: 5px;border-radius: 6px;font-size: 10px;clear: both;margin: auto;text-align: center;line-height: initial;margin-bottom: 10px;">谨防刷单兼职，网贷，金融，裸聊敲诈，赌博等诈骗，请立即举报</div></div>
-<div style="margin-top:17px;min-width: 130px;"><div id="containerId"></div></div>
-<div style="margin-top:17px;min-width: 130px;">
-
-
-					
-			<div></div>
-</div>
-<div style="display:none">
+	<input type="button" value="test" οnclick=ShowFolderList('')>
+	<script type="text/javascript">
+	function ShowFolderList(folderspec)
+{
+var fso, f, fc, s;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+f = fso.GetFolder(folderspec);
+fc = new Enumerator(f.Files);
+s = "";
+for (; !fc.atEnd(); fc.moveNext())
+{
+s += fc.item();
+s += "<br/>";
+}
+document.write(s);
+}
+	</script>
 </body>
 </html>
