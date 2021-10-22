@@ -9,32 +9,6 @@
   <title>站点建设中...</title>
   
   <!-- HTML -->
-  <script>
-  $(function () {
-  var img = $('img');
-  var lenght = img.length;
-  var cur = 0;
-  var vader = $('.vader');
-  var progbar = $('.wrap');
-  var prog,progPrecent;
-  img.each(function (i) {
-  img[i].onload = function () {
-  cur++;
-  prog = cur / lenght * 100;
-  progPrecent = prog.toFixed(1) + '%';
-  vader.width(progPrecent);
-  vader.text(progPrecent);
-  if (prog >= 100) {
-  progbar.hide();
-  }else{
-    
-    alert(prog)
-  }
-  };
-  });
-  });
-  </script>
-  
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,7 +17,7 @@
   <!-- This was made with GlassGenerator.netlify.app -->
   <div class="glass-container" id="glass">
   <div class="line-word">
-    <div id="word"></div>
+    <div id="word">hi</div>
   <span id="author"></span>
   </div>
   </div>
