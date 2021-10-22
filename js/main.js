@@ -1,4 +1,4 @@
-$(getData=function() {
+$(document).ready(getData=function() {
   $.ajax({
     url: "https://v1.hitokoto.cn",
     dataType: "json",
