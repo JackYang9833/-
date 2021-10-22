@@ -1,4 +1,4 @@
-jQuery(document).ready(getData=function ($) {
+$(getData=function() {
   $.ajax({
     url: "https://v1.hitokoto.cn",
     dataType: "json",
@@ -7,7 +7,7 @@ jQuery(document).ready(getData=function ($) {
     success: function(data) {
       // $("p").append(data + "<br />");
       $('#word').text(data.hitokoto);
-      $('#author').text(data.from_who+"《" +data.from+"》");
+      $('#author').text("—" + data.from);
       console.log(data);
     }
   });
