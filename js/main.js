@@ -1,15 +1,13 @@
-$(document).ready(getData=function ($) {
+function getData(){
   jQuery.ajax({
     url: "https://v1.hitokoto.cn",
     dataType: "json",
-    data:{c:'i'},
+    data:{'c':'j'},
     async: false,
-    success: function(data) {
-      // $("p").append(data + "<br />");
+    success: function (data) {
       $('#word').text(data.hitokoto);
-      $('#author').text('-'+data.from_who+"《" +data.from+"》");
-      console.log(data);
+      $('#author').text("— " + data.from_who)
     }
-  });
-});
+  })
+}
 setInterval(getData,5000)
