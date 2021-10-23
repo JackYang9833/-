@@ -1,9 +1,15 @@
+@font-face{
+  font-family:'宋体';
+  src:url("../medias/font/方正书宋.TTF")
+}
+
 body {
   display: flex;
     font-size: 12pt;
     justify-content: center;
 }
 .glass-container {
+  top: 50px;
   position: relative;
   width: calc(100% - 10px);
   height:480px;
@@ -14,39 +20,72 @@ body {
   gap: 20px;
   border-radius: 3px;
   backdrop-filter: blur(3px);
-  background-color: rgba(0, 191, 255, 0);
+  background-color: rgba(255, 255, 255, 0.08);
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
   border: 0px rgba(255, 255, 255, 0.4) solid;
   border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
   border-right: 0px rgba(40, 40, 40, 0.35) solid;
+  animation: heart 1.3s ease-in-out 2.7s infinite alternate
 }
-.line-word{
+
+
+@keyframes heart{
+from{transform:translate(0,0)}
+to{transform:translate(0,12px)}
+}
+.container{
+  left: 0;
+  height: 200px;
   width: 100%;
   display: block;
-  color: #000;
-  padding: 6px 0px;
+  background:rgba(0,0,0,0.5);
+}.logo{
+  height: 30px;
+  text-align: center;
+  font-family: Monospace;
+  font-size: 21pt;
 }
 #word{
-  padding: 6px 6px;
-  width: 100%;
-  font-size: 12pt;
-  padding: 6px 6px;
-  font-family: '微软雅黑';
+  padding-top: 6px;
+  color: #fff;
+  left: 0;
+  width:100% ;
+  text-align:center;
+  font-style: border;
+  font-size: 16pt;
+  font-family: '宋体';
 }
-#author{
-  position: absolute;
-  text-align: right;
-  width: 100%;
+#author,
+#protical{
+    left: 0;
+  width:100% ;
+  text-align:center;
+  font-style: border;
   font-size: 8pt;
+  font-family:'宋体';
 }
 .wrapper-main{
   top: 0;
   z-index: -999;
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 100%;
   position: fixed;
   display: flex;
   justify-content: center;
-  background: url("https://i.loli.net/2021/10/22/QlqHZiF6DECOfhs.jpg") no-repeat;
+  text-align: center;
+  margin: 0;
+  background: url("../medias/banner/6.jpg") no-repeat;
+}
+.icon-container{
+  width: 100%;
+  top: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+input[type=image]{
+  border-radius: 50%;
+  height: 69px;
+  width: 69px;
 }
