@@ -1,3 +1,9 @@
+var xhr=new XMLHttpRequest();
+if(xhr.readyState==4){
+  $('#word').text(data.hitokoto)
+}else{
+  $('#word').text("正在获取...")
+}
 function getData(){
   jQuery.ajax({
     url: "https://v1.hitokoto.cn",
