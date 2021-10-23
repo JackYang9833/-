@@ -12,11 +12,10 @@ function getData(){
   })
 }
 setInterval(getData,5000)
-// 进度条
-let load="<div id=\"preloader\">加载中，请等待</div>";
+  var i=0;
+let load="<div id=\"preloader\">Page is loading,please wait a while...</div>"+i;
 $('body').append(load);
 document.onreadystatechange=function(){
-  var i=0;
   while(document.readyState=="loading"){
     i++;
     $('#preloader').text(i)
