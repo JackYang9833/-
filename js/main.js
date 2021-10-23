@@ -2,11 +2,12 @@ function getData(){
   jQuery.ajax({
     url: "https://v1.hitokoto.cn",
     dataType: "json",
-    data:{'c':'j'},
+    data:{'c':'i'},
     async: false,
     success: function (data) {
       $('#word').text(data.hitokoto);
-      $('#author').text("— " + data.from_who)
+       const author=((data.from_who)==null)?'佚名':data.from_who;
+      $('#author').text("— " + author)
     }
   })
 }
