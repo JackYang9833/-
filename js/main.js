@@ -1,5 +1,5 @@
 $(document).ready(getData=function ($) {
-  $.ajax({
+  jQuery.ajax({
     url: "https://v1.hitokoto.cn",
     dataType: "json",
     data:{c:'i'},
