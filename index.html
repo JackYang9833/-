@@ -10,6 +10,16 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="" href="" title="" type="" />
+  <script>
+  // 进度条
+document.onreadystatechange=function(){
+  var loader="<div id=\"preloader\" style=\"position:absolute;z-index:999;background:#fff;color:#000;width:100%;height:100%;\">加载中，请等待</div>";
+  $('body').appen(loader);
+  if(document.readyState=="complete"){
+    $('preloader').fadeOut();
+  }
+}
+  </script>
 </head>
 
 <body>
