@@ -1,5 +1,5 @@
 var xhr=new XMLHttpRequest();
-if(xhr.readyState==4){
+if(xhr.readyState==4&&xhr.status==200){
   $('#word').text(data.hitokoto)
 }else{
   $('#word').text("正在获取...")
