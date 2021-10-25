@@ -31,6 +31,6 @@ var str=" <div id=\"circularG\">"+
 $('.circular-wrapper').append();
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
-    $('.circular-wrapper').fadeOut();
+    $('#circularG').fadeOut();
   }
 }
