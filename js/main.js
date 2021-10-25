@@ -23,5 +23,6 @@ $('body').append(load);
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
     $('#preloader').hide();
+    $('.circular-wrapper').fadeOut();
   }
 }
