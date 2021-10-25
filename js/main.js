@@ -4,7 +4,7 @@ if(xhr.readyState==4&&xhr.status==200){
 }else{
   $('#word').text("正在获取...")
 }
-function getData(){
+setTimeout(function(){
   jQuery.ajax({
     url: "https://v1.hitokoto.cn",
     dataType: "json",
@@ -16,9 +16,8 @@ function getData(){
       $('#author').text("— " + author)
     }
   })
-}
-setInterval(getData,5000)
-var str=" <div class=\"circular-wrapper\">"+
+},5000)
+var str=" <div class=\"circular-wrapper\">"+"页面正在加载"+
        " <div id=\"circularG\">"+
        "<div id=\"circularG_1\" class=\"circularG\"></div>"+
       "<div id=\"circularG_2\" class=\"circularG\"></div>"+
@@ -30,8 +29,10 @@ var str=" <div class=\"circular-wrapper\">"+
         "<div id=\"circularG_8\" class=\"circularG\"></div>"+
      "</div>"+"</div>";
 $('body').append(str);
+$('title').text('正在加载...');
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
-    $('.circular-wrapper').fadeOut();
+    $('title').text('');
+    $('.circular-wrapper').hide();
   }
 }
