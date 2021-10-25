@@ -18,11 +18,8 @@ function getData(){
   })
 }
 setInterval(getData,5000)
-let load="<div id=\"preloader\">Page is loading,please wait a while...</div>";
-$('body').append(load);
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
-    $('#preloader').hide();
     $('.circular-wrapper').fadeOut();
   }
 }
