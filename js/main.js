@@ -17,7 +17,7 @@ setTimeout(function(){
     }
   })
 },5000)
-var str=" <div class=\"circular-wrapper\">"+"页面正在加载"+
+var str=" <div class=\"circular-wrapper\">"+
        " <div id=\"circularG\">"+
        "<div id=\"circularG_1\" class=\"circularG\"></div>"+
       "<div id=\"circularG_2\" class=\"circularG\"></div>"+
