@@ -93,7 +93,7 @@ input[type=image]{
 .circular-wrapper{
   display: flex;
   justify-content: center;
-  background: #fff;
+  background: transparent;
   height: 100%;
   width: 100%;
   position: absolute;
