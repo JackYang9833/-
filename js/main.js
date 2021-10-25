@@ -32,6 +32,6 @@ var str=" <div class=\"circular-wrapper\">"+
 $('body').append(str);
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
-    $('.circular-wrapper').fadeOut();
+    $('.circular-wrapper').hide();
   }
 }
