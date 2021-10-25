@@ -4,7 +4,7 @@ if(xhr.readyState==4&&xhr.status==200){
 }else{
   $('#word').text("正在获取...")
 }
-setTimeout(function(){
+setInterval(function(){
   jQuery.ajax({
     url: "https://v1.hitokoto.cn",
     dataType: "json",
