@@ -31,6 +31,6 @@ var str=" <div id=\"circularG\">"+
 $('.circular-wrapper').append(str);
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
-    $('.circular-wrapper').style.display="none";
+
   }
 }
