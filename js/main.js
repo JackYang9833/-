@@ -18,7 +18,8 @@ function getData(){
   })
 }
 setInterval(getData,5000)
-var str=" <div id=\"circularG\">"+
+var str=" <div class=\"circular-wrapper\">"+
+       " <div id=\"circularG\">"+
        "<div id=\"circularG_1\" class=\"circularG\"></div>"+
       "<div id="\circularG_2\" class=\"circularG\"></div>"+
         "<div id=\"circularG_3\" class=\"circularG\"></div>"+
@@ -27,7 +28,7 @@ var str=" <div id=\"circularG\">"+
        "<div id=\"circularG_6\" class=\"circularG\"></div>"+
         "<div id=\"circularG_7\" class=\"circularG\"></div>"+
         "<div id=\"circularG_8\" class=\"circularG\"></div>"+
-     "</div>";
+     "</div>"+"</div>";
 $('#body').append(str);
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
