@@ -21,7 +21,7 @@ setInterval(getData,5000)
 var str=" <div class=\"circular-wrapper\">"+
        " <div id=\"circularG\">"+
        "<div id=\"circularG_1\" class=\"circularG\"></div>"+
-      "<div id="\circularG_2\" class=\"circularG\"></div>"+
+      "<div id=\"circularG_2\" class=\"circularG\"></div>"+
         "<div id=\"circularG_3\" class=\"circularG\"></div>"+
        "<div id=\"circularG_4\" class=\"circularG\"></div>"+
        " <div id=\"circularG_5\" class=\"circularG\"></div>"+
