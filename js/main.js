@@ -28,7 +28,7 @@ var str=" <div id=\"circularG\">"+
         "<div id=\"circularG_7\" class=\"circularG\"></div>"+
         "<div id=\"circularG_8\" class=\"circularG\"></div>"+
      "</div>";
-$('body').append();
+$('.circular-wrapper').append();
 document.onreadystatechange=function(){
   if(document.readyState=="complete"){
     $('.circular-wrapper').fadeOut();
