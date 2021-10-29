@@ -1,0 +1,69 @@
+body {
+    font-size: 18pt;
+    margin: 0;
+}
+.wrapper{
+  background: #212121;
+  color: #ffff;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  
+}
+.calc{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: solid #fff 1px;
+}
+.calc .display-screen{
+  display: block;
+  overflow: hidden;
+  height: 20%;
+  background: #fffde7;
+  color: #000;
+  text-align: right;
+  padding: 12px 12px;
+}
+.kbd-wrapper{
+  height: 80%;
+  width: 100%;
+}
+.kbd-sub-wrapper{
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.functions{
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.functions i{
+  width: 100%;
+  height: 100%;
+  border: solid #fff 1px;
+  text-align: center;
+}
+.num-picker{
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.num-picker  i {
+   width: 100%;
+   height: 100%;
+   border: solid #fff 1px;
+   text-align: center;
+ }
+i:hover{
+  background: #999;
+}
