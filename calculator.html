@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="main-box">
+            <div>{{title}}</div>
+            <div v-for='(itm,idx) in vlst.vClass'>{{(idx==0)?'十进制':(idx==1)?'二进制':(idx==2)?'八进制':(idx==3)?'十六进制':''}}
+                <input type="text" :class="itm">
+            </div>
+    </div>
+    <div id="main-box">BIgq</div>
+    </div>
+    <script src="js/calc.js"></script>
+</body>
+</html>
