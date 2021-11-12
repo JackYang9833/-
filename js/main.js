@@ -17,22 +17,18 @@ setInterval(function(){
     }
   })
 },5000)
-var str=" <div class=\"circular-wrapper\">"+
-       " <div id=\"circularG\">"+
-       "<div id=\"circularG_1\" class=\"circularG\"></div>"+
-      "<div id=\"circularG_2\" class=\"circularG\"></div>"+
-        "<div id=\"circularG_3\" class=\"circularG\"></div>"+
-       "<div id=\"circularG_4\" class=\"circularG\"></div>"+
-       " <div id=\"circularG_5\" class=\"circularG\"></div>"+
-       "<div id=\"circularG_6\" class=\"circularG\"></div>"+
-        "<div id=\"circularG_7\" class=\"circularG\"></div>"+
-        "<div id=\"circularG_8\" class=\"circularG\"></div>"+
-     "</div>"+"</div>";
-$('body').append(str);
+  var loader="\<div class=\"loader-wrapper\">"+
+    "<div class=\"loader loader-7\">"+
+      "<div class=\"line line1\"></div>"+
+      "<div class=\"line line2\"></div>"+
+      "<div class=\"line line3\"></div>"+
+    "</div>"+
+"</div>";
+$('body').append(loader);
 $('title').text('正在加载...');
 document.onreadystatechange=function(){
-  if(document.readyState=="complete"){
-    $('title').text('');
-    $('.circular-wrapper').hide();
-  }
+if(document.readyState=="complete"){
+$('title').text('');
+$('.loader-wrapper').fadeOut();
+}
 }
