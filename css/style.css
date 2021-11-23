@@ -4,9 +4,7 @@
 }
 
 body {
-  display: flex;
-    font-size: 12pt;
-    justify-content: center;
+margin:0;
 }
 .glass-container {
   top: 50px;
@@ -100,15 +98,11 @@ input[type=image]{
   top: 0;
 }
 .wrapper{
+position:absolute;
   height: 100%;
   width: 100%;
-  position:absolute;
   display: flex; /*宽屏*/
-  top: 0;
-  bottom: 0;
-  right:0;
-  left: 0;
-  background: mediumaquamarine;
+margin:0;
 }
 #main-box{
   height:100%;
@@ -147,6 +141,8 @@ input[type=text]{
 
 /*LOADER*/
 .loader-wrapper{
+top:0;
+bottom:0;
   height: 100%;
   width: 100%;
   position:absolute;
